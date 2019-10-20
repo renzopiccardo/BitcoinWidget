@@ -1,0 +1,32 @@
+img{
+    filter: blur(10px) brightness(50%);
+    -webkit-filter: blur(10px) brightness(50%);
+    -moz-filter: blur(10px) brightness(50%);
+    -o-filter: blur(10px) brightness(50%);
+    -ms-filter: blur(10px) brightness(50%);
+}
+
+#div_toast{
+    position: absolute !important;
+    top: 0 !important; 
+    right: 0 !important;
+    z-index:2 !important;
+}
+
+$base-color: #202020;
+$text-color: #fff6ea;
+
+#button_save{
+    width: 100px !important;
+    height: 50px !important;
+    background-color: $base-color !important;
+    color: $text-color !important;
+    border-radius: 10px !important;
+    border: 1px solid black;
+    outline: none !important;
+    font-size: 20px;
+}
+
+#button_save:hover{
+    background-color: black !important;
+}
