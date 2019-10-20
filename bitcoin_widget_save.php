@@ -6,6 +6,7 @@ $rate = isset($_REQUEST['rate']) ? $_REQUEST['rate']:null;
 $description = isset($_REQUEST['description']) ? $_REQUEST['description']:null;
 $rate_float = isset($_REQUEST['rate_float']) ? $_REQUEST['rate_float']:null;
 
+//db configuration
 $host = "127.0.0.1";
 $user = "root";
 $password = "";
@@ -17,12 +18,14 @@ if (mysqli_connect_errno()) {
     exit();
 }
 
+//Escape to sanitize inputs
 $cod = mysqli_real_escape_string($con, $cod);
 $symbol = mysqli_real_escape_string($con, $symbol);
 $rate = mysqli_real_escape_string($con, $rate);
 $description = mysqli_real_escape_string($con, $description);
 $rate_float = mysqli_real_escape_string($con, $rate_float);
 
+//Example database table
 /*
 CREATE TABLE bitcoinprices(
 	cod varchar(3),
