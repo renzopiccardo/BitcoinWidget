@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 -Sass compiler: to be able to modify Sass files and compile them to css. https://sass-lang.com/install
 
--Composer: dependency management, used to install and update guzzle and bootstrap.
+-Composer: dependency management, used to install and update guzzle and bootstrap. https://getcomposer.org/download/
 
 
 ### Installing
